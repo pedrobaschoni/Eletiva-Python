@@ -26,11 +26,11 @@ email = prompt.email("Seu e-mail:")
 nome = prompt.string("Seu nome: ")
 
 #SAIDA DE DADOS NA TELA
-nome = "Vilson"
+nome = "Pedro"
 cidade = "Epitacio"
 
 print(f'Ola {nome}, bem vindo ao curso em {cidade}')
-print("%s Bem vindo %s"%("Vilson","Epitacio"))
+print("%s Bem vindo %s"%("Pedro","Epitacio"))
 print("Olá, {} e {}!".format('pessoa1','pessoa2'))
 
 print('{:,}'.format(1234567890))
@@ -39,22 +39,21 @@ print('Respostas corretas: {:.2%}'.format(53/60))
 
 
 #MANIPULAÇÃO DE STRING
-nome = 'vilson maziero'
-print(nome[0:nome.index(" ")].title())      # Vilson
-print(nome[0:nome.find(("s"))])             # vil
-print(nome[0:3])                            # vil
-print(nome[7:14].upper())                   # MAZIERO
-print(nome.split())                         # ['vilson','maziero']
-print(nome.replace("maziero","francisco"))  # vilson francisco
+nome = 'pedro baschoni'
+print(nome[0:nome.index(" ")].title())      # Pedro
+print(nome[0:nome.find(("s"))])             # ped
+print(nome[0:3])                            # ped
+print(nome[7:14].upper())                   # BASCHONI
+print(nome.split())                         # ['pedro','baschoni']
+print(nome.replace("lucas","baschoni"))  # pedro baschoni
 letrasnome = [x for x in nome[:6]]
-print(letrasnome)                           # ['v','i','l','s','o','n']
-print(nome[7:])                             # maziero
-print(nome[::-1])                           # oreizam nosliv
-print(nome[::2])                            # vls air
-print(" francisco ".join(nome.split(" ")))  # vilson francisco maziero
+print(letrasnome)                           # ['p','e','d','r','o']
+print(nome[6:])                             # baschoni
+print(nome[::-1])                           # inohcsab ordep
+print(" lucas ".join(nome.split(" ")))  # pedro lucas baschoni
 
 #COMANDO REPETIÇÃO FOR
-nome = ["VILSON","JOAO"]
+nome = ["PEDRO","ABIGAIL"]
 
 for key, value in enumerate(nome):
     print (key, value)
