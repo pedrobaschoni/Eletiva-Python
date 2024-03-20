@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Informe os Dados do Evento</h1>
+
+    <form action="http://localhost:5000/mostradados"
+          method="POST">
+
+        <label>Nome</label> <br/>
+        <input type="text" name="nome"/> <br/><br/>
+
+        <label>Horario de Inicio</label> <br/>
+        <input type="time" name="horarioinicio"/> <br/><br/>
+
+        <label>Horario de Término</label> <br/>
+        <input type="time" name="horariotermino"/> <br/><br/>
+
+        <label>Data</label> <br/>
+        <input type="date" name="data"/> <br/><br/>
+
+        <button type="submit"
+                name="botao"
+                value="Gravar">Salvar</button>
+
+        <input type="button"
+               value="Voltar"
+               onclick="window.location='http://localhost:5000';"/>
+    </form>
+
+
+</body>
+</html>

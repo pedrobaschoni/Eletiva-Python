@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados do Evento</title>
+</head>
+<body>
+    <h1>Dados do Evento</h1>
+
+{% for key, value in result.items() %}
+    <label>{{ key }}</label> <br/>
+    <input type="text" value="{{ value }}" /> <br/>
+{% endfor %}
+
+    <br/>
+    <input type="button"
+           value="Voltar"
+           onclick="window.location='http://localhost:5000/cadastro';"/>
+
+
+</body>
+</html>
