@@ -5,3 +5,4 @@ Repositório criado para registrar os exercicios que desenvolvi em python durant
 - Comando para baixar as bibliotecas atuais neste repositório:
   - `pip install pymysql`
   - `pip install cryptography`
+  - `pip install flask` (Web)
